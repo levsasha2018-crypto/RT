@@ -1,0 +1,12 @@
+build/
+build-*/
+.vscode/
+.DS_Store
+__pycache__/
+*.pyc
+*.uf2
+*.elf
+*.bin
+*.o
+*.a
+.env
