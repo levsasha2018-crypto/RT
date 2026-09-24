@@ -1,0 +1,28 @@
+задание: 2.1.1
+проект: 211-command-usb
+устройство: 2e8a:000a
+серийный номер: E66098F29B472339
+порт: COM8
+начало: 2026-09-24T16:33:24
+   0.000 --> enable
+   0.007 <-- enable
+   0.008 <-- dbg read_line:88 got enable
+   0.008 <-- inf led_set:21 led on
+   2.039 --> disable
+   2.046 <-- disable
+   2.047 <-- dbg read_line:88 got disable
+   2.047 <-- inf led_set:21 led off
+   4.080 --> info
+   4.085 <-- info
+   4.085 <-- dbg read_line:88 got info
+   4.086 <-- project: 211-command-usb
+   4.086 <-- repo: https://github.com/levsasha2018-crypto/RT
+   4.087 <-- board: pico
+   4.087 <-- serial: E66098F29B472339
+   4.088 <-- chip: manufacturer 0x927, part 0x0002, revision 1
+   4.088 <-- pico-sdk: 2.3.0
+   6.114 --> nosuchcommand
+   6.128 <-- nosuchcommand
+   6.128 <-- dbg read_line:88 got nosuchcommand
+   6.129 <-- err handle_command:73 unknown command: nosuchcommand
+итог: отправлено команд 4, принято строк 17

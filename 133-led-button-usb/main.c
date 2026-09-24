@@ -5,9 +5,10 @@
 const uint LED_PIN = 25;
 const uint BUTTON_PIN = 15;
 
-// One button, active low. Accept both edges only after 20 ms without changes.
+// One active-low contact, also usable with a hand-held jumper wire.
+// Require 200 ms of stable input on both edges to reject contact chatter.
 // A monotonic timer keeps USB command processing responsive during debounce.
-const uint DEBOUNCE_MS = 20;
+const uint DEBOUNCE_MS = 200;
 
 bool get_button_debounce(uint pin)
 {
