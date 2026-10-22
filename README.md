@@ -1,8 +1,8 @@
-# Встраиваемые системы — занятия 1.1–2.1
+# Встраиваемые системы — занятия 1.1–2.3
 
-Решения опубликованного первого модуля [курса ant-lab](https://es.ant-lab.ru/).
+Решения заданий [курса ant-lab](https://es.ant-lab.ru/).
 Источник заданий: [es-book](https://github.com/ant-lab-ru/es-book),
-Актуальная версия книги получена 24 сентября 2026 года.
+Актуальная версия книги получена 22 октября 2026 года.
 
 | Задания | Проект | Результат |
 | --- | --- | --- |
@@ -14,13 +14,19 @@
 | 1.3.3–1.3.4 | `133-led-button-usb` | Кнопка, сообщения LED и команды `e`, `d` |
 | 1.3.5–1.3.7 | `134-led-module` | Модули LED, журнала и паспорта устройства |
 | 2.1.1–2.1.6 | `211-command-usb` | Строковые команды, таблица обработчиков и диагностика памяти |
+| 2.3.1–2.3.4, неделя 7 | `231-firmware-template` | Протокол, API, задачи LED и кнопки, неблокирующий расчёт π |
 
-## Что ещё требует платы
+[![2.3.1](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-1.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-1.yml)
+[![2.3.2](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-2.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-2.yml)
+[![2.3.3](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-3.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-3.yml)
+[![2.3.4](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-4.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-4.yml)
 
-Исходный код и конфигурации подготовлены. Прошивка платы, наблюдение LED,
-нажатия кнопки и получение логов USB требуют настоящей Raspberry Pi Pico.
-Для занятия 2.1 необходимо записать `211_command_usb.uf2` и снять шесть логов
-`device-2-1-1.log`…`device-2-1-6.log` официальными скриптами проекта.
+## Седьмая неделя
+
+Первая неделя занятия 2.3 включает задания **2.3.1–2.3.4**. Их официальные проверки статические и не требуют лога с платы.
+Код собран и дополнительно проверен в эмуляторе. [Пояснения, результаты и порядок проверки](docs/week-7.md).
+
+Задания 2.3.5–2.3.9 относятся ко второй неделе занятия. Ручную проверку работы на Pico и приёмку 2.3.8 выполняют отдельно.
 
 ## Сборка
 
@@ -36,6 +42,8 @@
 ./tools/build.ps1 -Project 134-led-module
 # Проект четвёртой недели:
 ./tools/build.ps1 -Project 211-command-usb
+# Проект седьмой недели:
+./tools/build.ps1 -Project 231-firmware-template
 # Сравнение размера с отключёнными отладочными сообщениями:
 ./tools/build.ps1 -Project 134-led-module -LogLevel 2
 ```
