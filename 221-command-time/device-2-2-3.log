@@ -1,0 +1,25 @@
+задание: 2.2.3
+проект: 221-command-time
+устройство: 2e8a:000a
+серийный номер: E66098F29B56BD32
+порт: COM12
+начало: 2026-10-22T16:33:11
+   0.000 --> calc_pi
+   0.000 <-- calc_pi
+   0.001 <-- dbg read_line:124 got calc_pi
+   1.023 --> uptime
+   4.700 <-- pi: 3.14159165
+   4.700 <-- time: 4698 ms
+   4.700 <-- inf led_set:21 led off
+   4.701 <-- uptime
+   4.701 <-- dbg read_line:124 got uptime
+   4.701 <-- uptime: 52358 ms
+   5.200 <-- inf led_set:21 led on
+   5.700 <-- inf led_set:21 led off
+   6.200 <-- inf led_set:21 led on
+   6.700 <-- inf led_set:21 led off
+   7.200 <-- inf led_set:21 led on
+   7.701 <-- inf led_set:21 led off
+   8.200 <-- inf led_set:21 led on
+   8.700 <-- inf led_set:21 led off
+итог: отправлено команд 2, принято строк 16

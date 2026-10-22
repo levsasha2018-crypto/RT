@@ -1,0 +1,70 @@
+задание: 2.2.2
+проект: 221-command-time
+устройство: 2e8a:000a
+серийный номер: E66098F29B56BD32
+порт: COM12
+начало: 2026-10-22T16:36:16
+   0.000 --> uptime
+   0.025 <-- uptime
+   0.051 <-- dbg read_line:124 got uptime
+   0.077 <-- uptime: 238234 ms
+   0.352 <-- inf led_set:21 led on
+   0.429 --> boot_info
+   0.454 <-- boot_info
+   0.481 <-- dbg read_line:124 got boot_info
+   0.506 <-- vector table   0x10000100
+   0.533 <-- stack top    0x20042000
+   0.558 <-- reset        0x100001f7
+   0.585 <-- reset (even) 0x100001f6
+   0.610 <-- gpio in        0xd0000004
+   0.636 <-- led bit      1
+   0.662 <-- gpio_get     1
+   0.852 <-- inf led_set:21 led off
+   0.852 --> uptime
+   0.877 <-- uptime
+   0.903 <-- dbg read_line:124 got uptime
+   0.930 <-- uptime: 239086 ms
+   1.288 --> boot_info
+   1.313 <-- boot_info
+   1.339 <-- dbg read_line:124 got boot_info
+   1.365 <-- vector table   0x10000100
+   1.391 <-- stack top    0x20042000
+   1.417 <-- reset        0x100001f7
+   1.443 <-- reset (even) 0x100001f6
+   1.470 <-- gpio in        0xd0000004
+   1.495 <-- led bit      0
+   1.521 <-- gpio_get     0
+   1.547 <-- inf led_set:21 led on
+   1.714 --> uptime
+   1.739 <-- uptime
+   1.766 <-- dbg read_line:124 got uptime
+   1.792 <-- uptime: 239949 ms
+   1.852 <-- inf led_set:21 led off
+   2.138 --> boot_info
+   2.163 <-- boot_info
+   2.189 <-- dbg read_line:124 got boot_info
+   2.215 <-- vector table   0x10000100
+   2.241 <-- stack top    0x20042000
+   2.268 <-- reset        0x100001f7
+   2.294 <-- reset (even) 0x100001f6
+   2.320 <-- gpio in        0xd0000004
+   2.345 <-- led bit      0
+   2.371 <-- gpio_get     0
+   2.397 <-- inf led_set:21 led on
+   2.576 --> uptime
+   2.601 <-- uptime
+   2.628 <-- dbg read_line:124 got uptime
+   2.653 <-- uptime: 240810 ms
+   2.852 <-- inf led_set:21 led off
+   3.002 --> boot_info
+   3.026 <-- boot_info
+   3.053 <-- dbg read_line:124 got boot_info
+   3.079 <-- vector table   0x10000100
+   3.105 <-- stack top    0x20042000
+   3.131 <-- reset        0x100001f7
+   3.157 <-- reset (even) 0x100001f6
+   3.182 <-- gpio in        0xd0000004
+   3.208 <-- led bit      0
+   3.235 <-- gpio_get     0
+   3.352 <-- inf led_set:21 led on
+итог: отправлено команд 8, принято строк 55

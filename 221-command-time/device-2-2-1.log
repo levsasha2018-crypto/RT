@@ -1,0 +1,34 @@
+задание: 2.2.1
+проект: 221-command-time
+устройство: 2e8a:000a
+серийный номер: E66098F29B56BD32
+порт: COM12
+начало: 2026-10-22T16:32:44
+   0.000 --> clk_info
+   0.001 <-- clk_info
+   0.001 <-- dbg read_line:124 got clk_info
+   0.002 <-- signal     set_khz measured_khz
+   0.003 <-- clk_ref      12000        12001
+   0.004 <-- clk_sys     125000       125000
+   0.005 <-- clk_peri    125000       125001
+   0.006 <-- clk_usb      48000        48000
+   0.007 <-- clk_adc      48000        48000
+   0.008 <-- rosc             -         5478
+   0.338 <-- inf led_set:21 led on
+   0.838 <-- inf led_set:21 led off
+   1.338 <-- inf led_set:21 led on
+   1.838 <-- inf led_set:21 led off
+   2.048 --> info
+   2.049 <-- info
+   2.049 <-- dbg read_line:124 got info
+   2.050 <-- project: 221-command-time
+   2.050 <-- repo: https://github.com/levsasha2018-crypto/RT
+   2.050 <-- board: pico
+   2.051 <-- serial: E66098F29B56BD32
+   2.051 <-- chip: manufacturer 0x927, part 0x0002, revision 1
+   2.052 <-- pico-sdk: 2.3.0
+   2.338 <-- inf led_set:21 led on
+   2.838 <-- inf led_set:21 led off
+   3.339 <-- inf led_set:21 led on
+   3.838 <-- inf led_set:21 led off
+итог: отправлено команд 2, принято строк 25

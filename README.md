@@ -14,6 +14,7 @@
 | 1.3.3–1.3.4 | `133-led-button-usb` | Кнопка, сообщения LED и команды `e`, `d` |
 | 1.3.5–1.3.7 | `134-led-module` | Модули LED, журнала и паспорта устройства |
 | 2.1.1–2.1.6 | `211-command-usb` | Строковые команды, таблица обработчиков и диагностика памяти |
+| 2.2.1–2.2.5 | `221-command-time` | Частоты, неблокирующее мигание, расчёт π, профилирование и смена частоты ядра |
 | 2.3.1–2.3.4, неделя 7 | `231-firmware-template` | Протокол, API, задачи LED и кнопки, неблокирующий расчёт π |
 
 [![2.3.1](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-1.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-1.yml)
@@ -21,12 +22,23 @@
 [![2.3.3](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-3.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-3.yml)
 [![2.3.4](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-4.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-4.yml)
 
-## Седьмая неделя
+Неделя 7 выполнена в объёме первой недели занятия 2.3: задания 2.3.1–2.3.4.
+Остальные задания занятия относятся ко второй неделе. [Пояснения и проверка](docs/week-7.md).
 
-Первая неделя занятия 2.3 включает задания **2.3.1–2.3.4**. Их официальные проверки статические и не требуют лога с платы.
-Код собран и дополнительно проверен в эмуляторе. [Пояснения, результаты и порядок проверки](docs/week-7.md).
+[![2.2.1](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-2-1.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-2-1.yml)
+[![2.2.2](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-2-2.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-2-2.yml)
+[![2.2.3](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-2-3.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-2-3.yml)
+[![2.2.4](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-2-4.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-2-4.yml)
+[![2.2.5](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-2-5.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-2-5.yml)
 
-Задания 2.3.5–2.3.9 относятся ко второй неделе занятия. Ручную проверку работы на Pico и приёмку 2.3.8 выполняют отдельно.
+## Прогон занятия 2.2 на плате
+
+22 октября 2026 года прошивка проверена на настоящей Pico
+с серийным номером `E66098F29B56BD32`. Все пять логов
+`device-2-2-1.log`…`device-2-2-5.log` сохранены в `221-command-time`.
+Расчёт π занял 4698 мс на 125 МГц и 9397 мс на 62,5 МГц;
+после возврата частоты — снова 4698 мс. Аппаратные часы сохранили темп.
+Порядок и пояснения: [docs/lesson-2-2.md](docs/lesson-2-2.md).
 
 ## Сборка
 
@@ -42,6 +54,8 @@
 ./tools/build.ps1 -Project 134-led-module
 # Проект четвёртой недели:
 ./tools/build.ps1 -Project 211-command-usb
+# Проект шестой недели:
+./tools/build.ps1 -Project 221-command-time
 # Проект седьмой недели:
 ./tools/build.ps1 -Project 231-firmware-template
 # Сравнение размера с отключёнными отладочными сообщениями:
@@ -86,6 +100,8 @@ cmake --build 112-blink/build
 - `v` сообщает версию прошивки, `i` — паспорт платы. Номер платы и CHIP_ID читаются из железа.
 - Проект `211-command-usb` принимает слова `enable`, `disable`, `info`, `version`,
   `ping`, `mem_info`, `fw_info`, `dev_info` и `boot_info` с переводом строки.
+- В `221-command-time` добавлены `clk_info`, `uptime`, `calc_pi`, `main_time_exec`,
+  `main_time_reset`, `clk_sys_low` и `clk_sys_default`. Мигание не задерживает опрос USB.
 - [Ответы на контрольные вопросы](docs/answers.md).
 
 Скрипты опроса USB, файлы подключения SDK и правила вызова проверок основаны на

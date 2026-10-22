@@ -7,7 +7,7 @@ $ErrorActionPreference = 'Stop'
 $repoRoot = Split-Path $PSScriptRoot
 $projects = @('112-blink', '121-blink-reg', '122-led-button',
     '123-led-button-debounce', '131-hello-usb', '133-led-button-usb', '134-led-module',
-    '211-command-usb', '231-firmware-template')
+    '211-command-usb', '221-command-time', '231-firmware-template')
 if ($Project -ne 'all') {
     if ($Project -notin $projects) { throw "Unknown project: $Project" }
     $projects = @($Project)
@@ -18,7 +18,9 @@ foreach ($name in $projects) {
     $build = Join-Path $source $folder
     $configure = @('-S', $source, '-B', $build, '-G', 'Ninja',
         '-DCMAKE_BUILD_TYPE=Release', "-Dpicotool_DIR=$env:picotool_DIR")
-    if ($name -in @('134-led-module', '211-command-usb', '231-firmware-template')) { $configure += "-DLOG_LEVEL=$LogLevel" }
+    if ($name -in @('134-led-module', '211-command-usb', '221-command-time', '231-firmware-template')) {
+        $configure += "-DLOG_LEVEL=$LogLevel"
+    }
     & cmake @configure
     if ($LASTEXITCODE -ne 0) { throw "Configuration failed: $name" }
     & cmake --build $build --parallel 4

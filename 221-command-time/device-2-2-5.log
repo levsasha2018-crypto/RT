@@ -1,0 +1,124 @@
+задание: 2.2.5
+проект: 221-command-time
+устройство: 2e8a:000a
+серийный номер: E66098F29B56BD32
+порт: COM12
+начало: 2026-10-22T16:35:12
+   0.000 --> clk_info
+   0.001 <-- clk_info
+   0.001 <-- dbg read_line:124 got clk_info
+   0.002 <-- signal     set_khz measured_khz
+   0.002 <-- clk_ref      12000        12001
+   0.004 <-- clk_sys     125000       125000
+   0.004 <-- clk_peri    125000       125000
+   0.006 <-- clk_usb      48000        48000
+   0.007 <-- clk_adc      48000        48000
+   0.008 <-- rosc             -         5478
+   0.199 <-- inf led_set:21 led on
+   0.699 <-- inf led_set:21 led off
+   1.112 --> main_time_reset
+   1.113 <-- main_time_reset
+   1.114 <-- dbg read_line:124 got main_time_reset
+   1.114 <-- max reset
+   1.199 <-- inf led_set:21 led on
+   1.699 <-- inf led_set:21 led off
+   2.199 <-- inf led_set:21 led on
+   2.699 <-- inf led_set:21 led off
+   3.199 <-- inf led_set:21 led on
+   3.199 --> main_time_exec
+   3.200 <-- main_time_exec
+   3.200 <-- dbg read_line:124 got main_time_exec
+   3.201 <-- iteration avg 2.57 us, max 285 us
+   3.699 <-- inf led_set:21 led off
+   4.199 <-- inf led_set:21 led on
+   4.199 --> calc_pi
+   4.199 <-- calc_pi
+   4.200 <-- dbg read_line:124 got calc_pi
+   8.899 <-- pi: 3.14159165
+   8.899 <-- time: 4698 ms
+   8.899 <-- inf led_set:21 led off
+   9.399 <-- inf led_set:21 led on
+   9.899 <-- inf led_set:21 led off
+  10.311 --> clk_sys_low
+  10.312 <-- clk_sys_low
+  10.312 <-- dbg read_line:124 got clk_sys_low
+  10.313 <-- inf clk_sys_set:45 clk_sys 62500 kHz
+  10.399 <-- inf led_set:21 led on
+  10.899 <-- inf led_set:21 led off
+  11.399 <-- inf led_set:21 led on
+  11.399 --> clk_info
+  11.400 <-- clk_info
+  11.400 <-- dbg read_line:124 got clk_info
+  11.401 <-- signal     set_khz measured_khz
+  11.402 <-- clk_ref      12000        12002
+  11.403 <-- clk_sys      62500        62500
+  11.404 <-- clk_peri     48000        48000
+  11.406 <-- clk_usb      48000        48000
+  11.407 <-- clk_adc      48000        48000
+  11.408 <-- rosc             -         5486
+  11.899 <-- inf led_set:21 led off
+  12.399 <-- inf led_set:21 led on
+  12.399 --> uptime
+  12.400 <-- uptime
+  12.401 <-- dbg read_line:124 got uptime
+  12.401 <-- uptime: 152673 ms
+  12.899 <-- inf led_set:21 led off
+  13.399 <-- inf led_set:21 led on
+  13.899 <-- inf led_set:21 led off
+  14.400 <-- inf led_set:21 led on
+  14.400 --> uptime
+  14.401 <-- uptime
+  14.401 <-- dbg read_line:124 got uptime
+  14.401 <-- uptime: 154673 ms
+  14.899 <-- inf led_set:21 led off
+  15.399 <-- inf led_set:21 led on
+  15.605 --> main_time_reset
+  15.607 <-- main_time_reset
+  15.608 <-- dbg read_line:124 got main_time_reset
+  15.608 <-- max reset
+  15.899 <-- inf led_set:21 led off
+  16.399 <-- inf led_set:21 led on
+  16.899 <-- inf led_set:21 led off
+  17.399 <-- inf led_set:21 led on
+  17.613 --> main_time_exec
+  17.614 <-- main_time_exec
+  17.615 <-- dbg read_line:124 got main_time_exec
+  17.616 <-- iteration avg 5.18 us, max 592 us
+  17.899 <-- inf led_set:21 led off
+  18.399 <-- inf led_set:21 led on
+  18.807 --> calc_pi
+  18.808 <-- calc_pi
+  18.808 <-- dbg read_line:124 got calc_pi
+  28.206 <-- pi: 3.14159165
+  28.206 <-- time: 9397 ms
+  28.207 <-- inf led_set:21 led off
+  28.707 <-- inf led_set:21 led on
+  29.207 <-- inf led_set:21 led off
+  29.707 <-- inf led_set:21 led on
+  29.916 --> clk_sys_default
+  29.918 <-- clk_sys_default
+  29.918 <-- dbg read_line:124 got clk_sys_default
+  29.919 <-- inf clk_sys_set:45 clk_sys 125000 kHz
+  30.207 <-- inf led_set:21 led off
+  30.707 <-- inf led_set:21 led on
+  30.922 --> clk_info
+  30.923 <-- clk_info
+  30.923 <-- dbg read_line:124 got clk_info
+  30.923 <-- signal     set_khz measured_khz
+  30.925 <-- clk_ref      12000        12001
+  30.925 <-- clk_sys     125000       125000
+  30.926 <-- clk_peri     48000        48000
+  30.927 <-- clk_usb      48000        48000
+  30.929 <-- clk_adc      48000        48000
+  30.930 <-- rosc             -         5482
+  31.207 <-- inf led_set:21 led off
+  31.706 <-- inf led_set:21 led on
+  32.113 --> calc_pi
+  32.113 <-- calc_pi
+  32.114 <-- dbg read_line:124 got calc_pi
+  36.813 <-- pi: 3.14159165
+  36.813 <-- time: 4698 ms
+  36.813 <-- inf led_set:21 led off
+  37.313 <-- inf led_set:21 led on
+  37.813 <-- inf led_set:21 led off
+итог: отправлено команд 14, принято строк 103
