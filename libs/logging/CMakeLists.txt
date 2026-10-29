@@ -1,0 +1,5 @@
+add_library(logging STATIC src/log.c)
+target_include_directories(logging PUBLIC include)
+if(DEFINED LOG_LEVEL)
+    target_compile_definitions(logging PUBLIC LOG_LEVEL=${LOG_LEVEL})
+endif()

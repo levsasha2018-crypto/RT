@@ -1,8 +1,12 @@
-# Встраиваемые системы — занятия 1.1–2.3
+# Встраиваемые системы — занятия 1.1–3.1
 
 Решения заданий [курса ant-lab](https://es.ant-lab.ru/).
 Источник заданий: [es-book](https://github.com/ant-lab-ru/es-book),
-Актуальная версия книги получена 22 октября 2026 года.
+Актуальная версия книги получена 29 октября 2026 года.
+
+**Программная часть подготовлена до 3.1.5 включительно.**
+[Что выполнено и что требует платы](docs/available-2026-10-29.md) ·
+[План подключения и снятия показаний](docs/capture-plan.md).
 
 | Задания | Проект | Результат |
 | --- | --- | --- |
@@ -16,6 +20,9 @@
 | 2.1.1–2.1.6 | `211-command-usb` | Строковые команды, таблица обработчиков и диагностика памяти |
 | 2.2.1–2.2.5 | `221-command-time` | Частоты, неблокирующее мигание, расчёт π, профилирование и смена частоты ядра |
 | 2.3.1–2.3.4, неделя 7 | `231-firmware-template` | Протокол, API, задачи LED и кнопки, неблокирующий расчёт π |
+| 2.3.5–2.3.8 | `231-firmware-template`, `libs` | Общие библиотеки, секундомеры, граница SDK, скрипт приёмки |
+| 2.3.9, 2.3.9д | `239-two-buttons` | Две независимые кнопки и долгое нажатие |
+| 3.1.1–3.1.5 | `311-adc` | АЦП, температура, телеметрия, запись графиков и RC-опыт |
 
 [![2.3.1](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-1.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-1.yml)
 [![2.3.2](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-2.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-2.yml)
@@ -106,3 +113,19 @@ cmake --build 112-blink/build
 
 Скрипты опроса USB, файлы подключения SDK и правила вызова проверок основаны на
 официальных материалах курса. Лицензия материалов курса сохранена в `LICENSE.course`.
+
+## Проверки следующих заданий
+
+Приёмка и измерительные задания запускаются после добавления настоящих файлов опыта.
+
+[![2.3.5](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-5.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-5.yml)
+[![2.3.6](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-6.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-6.yml)
+[![2.3.7](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-7.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-7.yml)
+[![2.3.8](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-8.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-8.yml)
+[![2.3.9](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-9.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-9.yml)
+[![2.3.9d](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-9d.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-2-3-9d.yml)
+[![3.1.1](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-3-1-1.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-3-1-1.yml)
+[![3.1.2](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-3-1-2.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-3-1-2.yml)
+[![3.1.3](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-3-1-3.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-3-1-3.yml)
+[![3.1.4](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-3-1-4.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-3-1-4.yml)
+[![3.1.5](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-3-1-5.yml/badge.svg)](https://github.com/levsasha2018-crypto/RT/actions/workflows/check-3-1-5.yml)
