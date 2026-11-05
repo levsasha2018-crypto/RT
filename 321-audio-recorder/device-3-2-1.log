@@ -1,0 +1,88 @@
+задание: 3.2.1
+проект: 321-audio-recorder
+устройство: 2e8a:000a
+серийный номер: E66098F29B4B8932
+порт: COM14
+начало: 2026-11-05T16:59:41
+   0.000 --> 
+   0.556 --> help
+   0.557 <-- help
+   0.557 <-- help              list of commands
+   0.557 <-- timer_blink_start timer_blink_start <period_ms>
+   0.557 <-- timer_blink_stop  stop timer blink
+   0.557 <-- cap_start         cap_start <N> <period_us>
+   0.557 <-- cap_dump          show timer capture
+   0.557 <-- dma_cap           dma_cap <N>
+   0.558 <-- stream_start      stream_start [8|16]
+   0.558 <-- stream_stop       stop audio stream
+   0.558 <-- generate_tone     generate_tone <Hz>
+   0.558 <-- mic_bias          microphone DC bias
+   0.558 <-- mic_level         mic_level [<ms>]
+   0.558 <-- wdt_enable        wdt_enable <timeout_ms>
+   0.559 <-- hang              stop the superloop intentionally
+   0.559 <-- reset_reason      last reset and watchdog restart count
+   0.559 <-- get_voltage       voltage on GP26
+   0.559 <-- get_temp          chip temperature in Celsius
+   0.559 <-- tm_start          start telemetry: tm_start [<period_ms>]
+   0.559 <-- tm_stop           stop telemetry
+   0.560 <-- charge_on         charge RC circuit through GP22
+   0.560 <-- charge_off        discharge RC circuit through GP22
+   0.560 <-- info              device passport
+   0.560 <-- uptime            time since reset
+   0.560 <-- led_enable        turn LED on
+   0.560 <-- led_disable       turn LED off
+   0.560 <-- led_blink         blink LED
+   0.560 <-- led_period        set blink period: led_period <period_ms>
+   0.560 <-- button            button state and press count
+   0.560 <-- pi_start          start pi calculation: pi_start [<terms>]
+   0.560 <-- pi                pi calculation state or last result
+   0.620 <-- profiling         stopwatch counts, means and maxima
+   0.620 <-- profiling_reset   reset all stopwatches
+   1.617 --> info
+   1.680 <-- info
+   1.680 <-- name: rt-recorder
+   1.680 <-- version: 1.3.0
+   1.680 <-- project: 321-audio-recorder
+   1.680 <-- repo: https://github.com/levsasha2018-crypto/RT
+   1.680 <-- board: pico
+   1.680 <-- serial: E66098F29B4B8932
+   1.680 <-- chip: manufacturer 0x927, part 0x0002, revision 1
+   1.680 <-- pico-sdk: 2.3.0
+   2.620 --> timer_blink_start 250
+   2.682 <-- timer_blink_start 250
+   2.682 <-- timer_blink: started, period 250 ms
+   3.627 --> pi_start 3000000
+   3.690 <-- pi_start 3000000
+   3.690 <-- pi: started, 3000000 terms
+   4.635 --> uptime
+   4.699 <-- uptime
+   4.699 <-- uptime: 60169 ms
+   5.640 --> info
+   5.704 <-- info
+   5.704 <-- name: rt-recorder
+   5.704 <-- version: 1.3.0
+   5.705 <-- project: 321-audio-recorder
+   5.705 <-- repo: https://github.com/levsasha2018-crypto/RT
+   5.705 <-- board: pico
+   5.705 <-- serial: E66098F29B4B8932
+   5.705 <-- chip: manufacturer 0x927, part 0x0002, revision 1
+   5.705 <-- pico-sdk: 2.3.0
+   6.651 --> pi
+   6.712 <-- pi
+   6.712 <-- pi: running
+   8.658 --> timer_blink_stop
+   8.721 <-- timer_blink_stop
+   8.721 <-- timer_blink: stopped, 24 toggles
+   9.658 --> timer_blink_start 100
+   9.722 <-- timer_blink_start 100
+   9.722 <-- timer_blink: started, period 100 ms
+  11.659 --> timer_blink_stop
+  11.721 <-- timer_blink_stop
+  11.721 <-- timer_blink: stopped, 20 toggles
+  12.661 --> timer_blink_start 5
+  12.724 <-- timer_blink_start 5
+  12.724 <-- error: period_ms must be 10..60000
+  13.162 --> timer_blink_start
+  13.223 <-- timer_blink_start
+  13.223 <-- error: usage timer_blink_start <period_ms>
+итог: отправлено кадров 13, принято строк 68
