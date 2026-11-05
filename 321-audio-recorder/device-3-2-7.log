@@ -1,0 +1,69 @@
+задание: 3.2.7
+проект: 321-audio-recorder
+устройство: 2e8a:000a
+серийный номер: E66098F29B4B8932
+порт: COM14
+начало: 2026-11-05T17:06:40
+   0.000 --> 
+   0.557 --> help
+   0.559 <-- help
+   0.559 <-- help              list of commands
+   0.559 <-- timer_blink_start timer_blink_start <period_ms>
+   0.559 <-- timer_blink_stop  stop timer blink
+   0.559 <-- cap_start         cap_start <N> <period_us>
+   0.559 <-- cap_dump          show timer capture
+   0.559 <-- dma_cap           dma_cap <N>
+   0.559 <-- stream_start      stream_start [8|16]
+   0.559 <-- stream_stop       stop audio stream
+   0.559 <-- generate_tone     generate_tone <Hz>
+   0.559 <-- mic_bias          microphone DC bias
+   0.559 <-- mic_level         mic_level [<ms>]
+   0.559 <-- wdt_enable        wdt_enable <timeout_ms>
+   0.560 <-- hang              stop the superloop intentionally
+   0.560 <-- reset_reason      last reset and watchdog restart count
+   0.560 <-- get_voltage       voltage on GP26
+   0.560 <-- get_temp          chip temperature in Celsius
+   0.560 <-- tm_start          start telemetry: tm_start [<period_ms>]
+   0.560 <-- tm_stop           stop telemetry
+   0.561 <-- charge_on         charge RC circuit through GP22
+   0.561 <-- charge_off        discharge RC circuit through GP22
+   0.561 <-- info              device passport
+   0.561 <-- uptime            time since reset
+   0.561 <-- led_enable        turn LED on
+   0.561 <-- led_disable       turn LED off
+   0.561 <-- led_blink         blink LED
+   0.562 <-- led_period        set blink period: led_period <period_ms>
+   0.562 <-- button            button state and press count
+   0.562 <-- pi_start          start pi calculation: pi_start [<terms>]
+   0.562 <-- pi                pi calculation state or last result
+   0.621 <-- profiling         stopwatch counts, means and maxima
+   0.621 <-- profiling_reset   reset all stopwatches
+   1.565 --> info
+   1.629 <-- info
+   1.629 <-- name: rt-recorder
+   1.629 <-- version: 1.3.0
+   1.629 <-- project: 321-audio-recorder
+   1.629 <-- repo: https://github.com/levsasha2018-crypto/RT
+   1.629 <-- board: pico
+   1.629 <-- serial: E66098F29B4B8932
+   1.629 <-- chip: manufacturer 0x927, part 0x0002, revision 1
+   1.629 <-- pico-sdk: 2.3.0
+   2.566 --> mic_bias
+   2.627 <-- mic_bias
+   2.688 <-- mic: bias 1.257 V
+   3.067 --> mic_level
+   3.130 <-- mic_level
+   3.193 <-- mic: level 25.6 mV rms, peak 257.0 mV, 100 ms
+   3.568 --> mic_level 50
+   3.630 <-- mic_level 50
+   3.630 <-- mic: level 14.5 mV rms, peak 49.1 mV, 50 ms
+   4.124 --> mic_level 185
+   4.186 <-- mic_level 185
+   4.375 <-- mic: level 13.7 mV rms, peak 55.6 mV, 184 ms
+   4.687 --> mic_level 0
+   4.748 <-- mic_level 0
+   4.748 <-- error: ms must be 1..185
+   5.248 --> mic_level 200
+   5.310 <-- mic_level 200
+   5.310 <-- error: ms must be 1..185
+итог: отправлено кадров 9, принято строк 53

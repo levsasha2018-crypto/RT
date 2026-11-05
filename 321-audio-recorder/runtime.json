@@ -1,0 +1,32 @@
+{
+  "serial": "E66098F29B4B8932",
+  "cycles": [
+    {
+      "bits": 16,
+      "frames": 69,
+      "lost": 0,
+      "overruns": 0,
+      "commands_during_stream": "passed",
+      "block_after_stop": "dma_cap 8192\r\ndma_cap: 8192 samples in 185759 us, expected 185759 us, min 1634 max 1730 mean 1678.9\r\n"
+    },
+    {
+      "bits": 8,
+      "frames": 34,
+      "lost": 0,
+      "overruns": 0,
+      "commands_during_stream": "passed",
+      "block_after_stop": "dma_cap 8192\r\ndma_cap: 8192 samples in 185756 us, expected 185759 us, min 1636 max 1723 mean 1679.2\r\n"
+    },
+    {
+      "bits": 16,
+      "frames": 69,
+      "lost": 0,
+      "overruns": 0,
+      "commands_during_stream": "passed",
+      "block_after_stop": "dma_cap 8192\r\ndma_cap: 8192 samples in 185757 us, expected 185759 us, min 1628 max 1734 mean 1678.7\r\n"
+    }
+  ],
+  "profiling": "profiling\r\nloop       count 376536     mean 9.20 us  max 1483 us\r\ncommand    count 376536     mean 2.47 us  max 297 us\r\nled        count 376537     mean 0.39 us  max 27 us\r\nbutton     count 376537     mean 0.82 us  max 28 us\r\npi         count 376537     mean 0.62 us  max 27 us\r\ntelemetry  count 376537     mean 0.40 us  max 27 us\r\nblock      count 376537     mean 0.45 us  max 1164 us\r\nstream     count 376537     mean 1.15 us  max 1475 us\r\n",
+  "stream_max_us": 1475,
+  "passed": true
+}
