@@ -1,0 +1,47 @@
+задание: 3.1.1
+проект: 311-adc
+устройство: 2e8a:000a
+серийный номер: E66098F29B56BD32
+порт: COM12
+начало: 2026-10-29T17:53:11
+   0.000 --> 
+   0.503 --> help
+   0.504 <-- help
+   0.504 <-- help              list of commands
+   0.504 <-- get_voltage       voltage on GP26
+   0.504 <-- get_temp          chip temperature in Celsius
+   0.504 <-- tm_start          start telemetry: tm_start [<period_ms>]
+   0.504 <-- tm_stop           stop telemetry
+   0.504 <-- charge_on         charge RC circuit through GP22
+   0.504 <-- charge_off        discharge RC circuit through GP22
+   0.504 <-- info              device passport
+   0.504 <-- uptime            time since reset
+   0.504 <-- led_enable        turn LED on
+   0.504 <-- led_disable       turn LED off
+   0.504 <-- led_blink         blink LED
+   0.505 <-- led_period        set blink period: led_period <period_ms>
+   0.505 <-- button            button state and press count
+   0.505 <-- pi_start          start pi calculation: pi_start [<terms>]
+   0.505 <-- pi                pi calculation state or last result
+   0.505 <-- profiling         stopwatch counts, means and maxima
+   0.565 <-- profiling_reset   reset all stopwatches
+   1.522 --> info
+   1.585 <-- info
+   1.585 <-- name: rt-adc
+   1.585 <-- version: 1.3.0
+   1.585 <-- project: 311-adc
+   1.585 <-- repo: https://github.com/levsasha2018-crypto/RT
+   1.585 <-- board: pico
+   1.585 <-- serial: E66098F29B56BD32
+   1.585 <-- chip: manufacturer 0x927, part 0x0002, revision 1
+   1.585 <-- pico-sdk: 2.3.0
+   2.540 --> get_voltage
+   2.603 <-- get_voltage
+   2.603 <-- voltage: 0.587 V
+   3.560 --> get_voltage
+   3.624 <-- get_voltage
+   3.624 <-- voltage: 0.552 V
+   4.582 --> get_voltage
+   4.646 <-- get_voltage
+   4.646 <-- voltage: 0.576 V
+итог: отправлено кадров 6, принято строк 34

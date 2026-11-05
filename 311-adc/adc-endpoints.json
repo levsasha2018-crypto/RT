@@ -1,0 +1,178 @@
+{
+  "task": "3.1.1",
+  "source": "real USB serial captures with user-confirmed wiring",
+  "captures": [
+    {
+      "captured_at": "2026-10-29T17:50:46+03:00",
+      "stage": "ground",
+      "user_confirmed_wiring": "GP26-AGND",
+      "port": "COM12",
+      "serial": "E66098F29B56BD32",
+      "voltage_v": [
+        0.01,
+        0.01,
+        0.01,
+        0.011,
+        0.01
+      ],
+      "exchange": [
+        {
+          "time_s": 0.225322,
+          "direction": "send",
+          "text": "tm_stop"
+        },
+        {
+          "time_s": 0.577126,
+          "direction": "receive",
+          "text": "tm_stop\r\ntelemetry: stopped\r\n"
+        },
+        {
+          "time_s": 0.577282,
+          "direction": "send",
+          "text": "info"
+        },
+        {
+          "time_s": 0.928045,
+          "direction": "receive",
+          "text": "info\r\nname: rt-adc\r\nversion: 1.3.0\r\nproject: 311-adc\r\nrepo: https://github.com/levsasha2018-crypto/RT\r\nboard: pico\r\nserial: E66098F29B56BD32\r\nchip: manufacturer 0x927, part 0x0002, revision 1\r\npico-sdk: 2.3.0\r\n"
+        },
+        {
+          "time_s": 0.928212,
+          "direction": "send",
+          "text": "get_voltage"
+        },
+        {
+          "time_s": 1.309057,
+          "direction": "receive",
+          "text": "get_voltage\r\nvoltage: 0.010 V\r\n"
+        },
+        {
+          "time_s": 1.309195,
+          "direction": "send",
+          "text": "get_voltage"
+        },
+        {
+          "time_s": 1.661948,
+          "direction": "receive",
+          "text": "get_voltage\r\nvoltage: 0.010 V\r\n"
+        },
+        {
+          "time_s": 1.662122,
+          "direction": "send",
+          "text": "get_voltage"
+        },
+        {
+          "time_s": 2.012885,
+          "direction": "receive",
+          "text": "get_voltage\r\nvoltage: 0.010 V\r\n"
+        },
+        {
+          "time_s": 2.013029,
+          "direction": "send",
+          "text": "get_voltage"
+        },
+        {
+          "time_s": 2.394896,
+          "direction": "receive",
+          "text": "get_voltage\r\nvoltage: 0.011 V\r\n"
+        },
+        {
+          "time_s": 2.395034,
+          "direction": "send",
+          "text": "get_voltage"
+        },
+        {
+          "time_s": 2.748018,
+          "direction": "receive",
+          "text": "get_voltage\r\nvoltage: 0.010 V\r\n"
+        }
+      ]
+    },
+    {
+      "captured_at": "2026-10-29T17:52:06+03:00",
+      "stage": "3v3",
+      "user_confirmed_wiring": "GP26-3V3(OUT)",
+      "port": "COM12",
+      "serial": "E66098F29B56BD32",
+      "voltage_v": [
+        3.299,
+        3.299,
+        3.299,
+        3.299,
+        3.299
+      ],
+      "exchange": [
+        {
+          "time_s": 0.22622,
+          "direction": "send",
+          "text": "tm_stop"
+        },
+        {
+          "time_s": 0.590035,
+          "direction": "receive",
+          "text": "tm_stop\r\ntelemetry: stopped\r\n"
+        },
+        {
+          "time_s": 0.590183,
+          "direction": "send",
+          "text": "info"
+        },
+        {
+          "time_s": 0.943066,
+          "direction": "receive",
+          "text": "info\r\nname: rt-adc\r\nversion: 1.3.0\r\nproject: 311-adc\r\nrepo: https://github.com/levsasha2018-crypto/RT\r\nboard: pico\r\nserial: E66098F29B56BD32\r\nchip: manufacturer 0x927, part 0x0002, revision 1\r\npico-sdk: 2.3.0\r\n"
+        },
+        {
+          "time_s": 0.943229,
+          "direction": "send",
+          "text": "get_voltage"
+        },
+        {
+          "time_s": 1.294888,
+          "direction": "receive",
+          "text": "get_voltage\r\nvoltage: 3.299 V\r\n"
+        },
+        {
+          "time_s": 1.295011,
+          "direction": "send",
+          "text": "get_voltage"
+        },
+        {
+          "time_s": 1.646821,
+          "direction": "receive",
+          "text": "get_voltage\r\nvoltage: 3.299 V\r\n"
+        },
+        {
+          "time_s": 1.646986,
+          "direction": "send",
+          "text": "get_voltage"
+        },
+        {
+          "time_s": 1.999707,
+          "direction": "receive",
+          "text": "get_voltage\r\nvoltage: 3.299 V\r\n"
+        },
+        {
+          "time_s": 1.999869,
+          "direction": "send",
+          "text": "get_voltage"
+        },
+        {
+          "time_s": 2.351681,
+          "direction": "receive",
+          "text": "get_voltage\r\nvoltage: 3.299 V\r\n"
+        },
+        {
+          "time_s": 2.3518,
+          "direction": "send",
+          "text": "get_voltage"
+        },
+        {
+          "time_s": 2.733688,
+          "direction": "receive",
+          "text": "get_voltage\r\nvoltage: 3.299 V\r\n"
+        }
+      ]
+    }
+  ]
+}
